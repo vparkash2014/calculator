@@ -1,0 +1,17 @@
+.calculator {
+  border: 3px solid black;
+  width: 286px;
+  height: 334.202px;
+  margin-top: 100px;
+}
+.calculator__output {
+  text-align: right;
+  border-radius: 12px;
+  border: 3px solid black;
+  height: 50px;
+  margin: 10px;
+}
+.calculator__btn {
+  border-radius: 50%;
+  height: 60px;
+}

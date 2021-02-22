@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/12f3470604.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/parent.css">
     <title>Calculator</title>
 </head>
 <body>
-    <form id = "calculator">
-        <input type="button" onclick="showValue(event)" id="btn0" value="0">
-        <input type="button" onclick="showValue(event)" id="btn1" value="1">
-        <input type="button" onclick="showValue(event)" id="btn2" value="2">
-        <input type="button" onclick="showValue(event)" id="btn3" value="3">
-        <input type="button" onclick="showValue(event)" id="btn4" value="4">
-        <input type="button" onclick="showValue(event)" id="btn5" value="5">
-        <input type="button" onclick="showValue(event)" id="btn6" value="6">
-        <input type="button" onclick="showValue(event)" id="btn7" value="7">
-        <input type="button" onclick="showValue(event)" id="btn8" value="8">
-        <input type="button" onclick="showValue(event)" id="btn8" value="9">
-        <input type="button" onclick="showValue(event)" id="btnDec" value=".">
-        <input type="button" onclick="showValue(event)" id="btnTimes" value="*">
-        <input type="button" onclick="showValue(event)" id="btnDivide" value="/" placeholder = "/">
-        <input type="button" onclick="showValue(event)" id="btnMinus" value="-" placeholder = "-">
-        <input type="button" onclick="showValue(event)" id="btnAdd" value="+" placeholder="+">
-        <input type="button" onclick="showValue(event)" id="btnEqual" value="=" placeholder="=">
+    <div class="parent">
+        <form id="calculator" class="calculator container">
+            <div class="row">
+                <p id="output" class="calculator__output col-11"></p>
+                <input type="button" id="btn7" class="calculator__btn col-3 " value="7">
+                <input type="button" id="btn8" class="calculator__btn col-3 " value="8">
+                <input type="button" id="btn8" class="calculator__btn col-3 " value="9">
+                <input type="button" id="btnDivide" class="calculator__btn col-3 " value="/" placeholder = "/">
+                <input type="button" id="btn4" class="calculator__btn col-3 " value="4">
+                <input type="button" id="btn5" class="calculator__btn col-3 " value="5">
+                <input type="button" id="btn6" class="calculator__btn col-3 " value="6">
+                <input type="button" id="btnTimes" class="calculator__btn col-3 " value="*">
+                <input type="button" id="btn1" class="calculator__btn col-3 " value="1">
+                <input type="button" id="btn2" class="calculator__btn col-3 " value="2">
+                <input type="button" id="btn3" class="calculator__btn col-3 " value="3">
+                <input type="button" id="btnMinus" class="calculator__btn col-3 " value="-" placeholder = "-">
+                <input type="button" id="btn0" class="calculator__btn col-3 " value="0">
+                <input type="button" id="btnDec" class="calculator__btn col-3 " value=".">
+                <input type="button" id="btnEqual" class="calculator__btn col-3 " value="=" placeholder="=">      
+                <input type="button" id="btnAdd" class="calculator__btn col-3 " value="+" placeholder="+">
 
+            </div>
+        </form>
+    </div>
 
-    </form>
-
-    <p id="output"></p>
     <p id="output2"></p>
 
     
     <script src="script/calculator.js"></script>
+    <script src="https://kit.fontawesome.com/12f3470604.js" crossorigin="anonymous"></script>
 </body>
 </html>

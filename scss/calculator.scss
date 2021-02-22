@@ -1,0 +1,21 @@
+.calculator {
+    border: 3px solid black;
+    width: 286px; 
+    height: 334.202px;
+    margin-top: 100px;
+    
+    &__output {
+        text-align: right;
+        border-radius: 12px;
+        border: 3px solid black;
+        height: 50px;
+        margin: 10px;
+    }
+
+    &__btn {
+        // margin: 5%;
+        border-radius: 50%;
+        height: 60px;
+        
+    }
+}
